@@ -9,10 +9,10 @@
 		<version>3.4.4</version>
 		<relativePath />
 	</parent>
-	<groupId>com.telusko</groupId>
-	<artifactId>JobApp</artifactId>
+	<groupId>com.stackhire</groupId>
+	<artifactId>JobPortal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>JobApp</name>
+	<name>JobPortal</name>
 	<packaging>war</packaging>
 	<description />
 	<url />

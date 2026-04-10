@@ -6,14 +6,14 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class JobAppApplication extends SpringBootServletInitializer {
+public class JobPortalApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(JobAppApplication.class);
+        return application.sources(JobPortalApplication.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(JobAppApplication.class, args);
+        SpringApplication.run(JobPortalApplication.class, args);
     }
 }

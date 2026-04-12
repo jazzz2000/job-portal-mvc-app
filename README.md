@@ -1,7 +1,7 @@
 # ⚡ StackHire — Job Portal MVC App
 
 A simple job portal web application built with **Spring Boot MVC**, **JSP**, and **MySQL**.
-Employers can post jobs and candidates can browse openings by role, skill, or tech stack.
+Employers can post, update, delete, and search jobs, while candidates can browse openings by role and tech stack.
 
 ---
 
@@ -10,6 +10,8 @@ Employers can post jobs and candidates can browse openings by role, skill, or te
 - 🏠 Beautiful responsive home page UI
 - ➕ Add / post new jobs
 - 📋 View all available jobs
+- ✏️ Update existing jobs
+- 🗑️ Delete jobs
 - 🔍 Search jobs by role, description, and tech stack
 - 🗄️ MySQL database integration
 - 🏗️ MVC architecture

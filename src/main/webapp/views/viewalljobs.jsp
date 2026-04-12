@@ -12,7 +12,8 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 	rel="stylesheet" crossorigin="anonymous">
-
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -84,6 +85,16 @@
 							<span class="tech-badge">${tech}</span>
 						</ab:forEach>
 					</div>
+				</div>
+				<div class="job-right">
+					<a href="editJob?id=${jobPost.postId}"
+						class="icon-btn edit-btn me-2" title="Edit Job"> <i
+						class="bi bi-pencil-square"></i>
+					</a> <a href="deleteJob?id=${jobPost.postId}"
+						class="icon-btn delete-btn" title="Delete Job"
+						onclick="return confirm('Are you sure you want to delete this job?')">
+						<i class="bi bi-trash"></i>
+					</a>
 				</div>
 			</div>
 		</ab:forEach>

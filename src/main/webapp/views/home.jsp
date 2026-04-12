@@ -46,14 +46,15 @@
 		</h1>
 		<p>StackHire — where top tech talent meets great opportunities</p>
 	</div>
-	
+
 	<div class="container mt-4">
-    <form action="searchJobs" method="get" class="d-flex justify-content-center">
-        <input type="text" name="keyword" class="form-control w-50"
-               placeholder="Search by role, skill, tech stack">
-        <button type="submit" class="btn btn-primary ms-2">Search</button>
-    </form>
-</div>
+		<form action="searchJobs" method="get"
+			class="d-flex justify-content-center">
+			<input type="text" name="keyword" class="form-control w-50"
+				placeholder="Search by role, skill, tech stack">
+			<button type="submit" class="btn btn-primary ms-2">Search</button>
+		</form>
+	</div>
 
 	<div class="container mt-page mb-5">
 		<div class="oval-box-container">

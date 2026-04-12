@@ -82,62 +82,56 @@
 								min="0" required>
 						</div>
 
-					<div class="col-md-6">
-    <label class="form-label">Tech Stack</label>
+						<div class="col-md-6">
+							<label class="form-label">Tech Stack</label>
 
-    <div class="tech-chip-group">
+							<div class="tech-chip-group">
 
-        <input type="checkbox" id="java" name="postTechStack" value="Java" hidden>
-        <label for="java" class="tech-chip">Java</label>
+								<input type="checkbox" id="java" name="postTechStack"
+									value="Java" hidden> <label for="java"
+									class="tech-chip">Java</label> <input type="checkbox"
+									id="javascript" name="postTechStack" value="JavaScript" hidden>
+								<label for="javascript" class="tech-chip">JavaScript</label> <input
+									type="checkbox" id="typescript" name="postTechStack"
+									value="TypeScript" hidden> <label for="typescript"
+									class="tech-chip">TypeScript</label> <input type="checkbox"
+									id="python" name="postTechStack" value="Python" hidden>
+								<label for="python" class="tech-chip">Python</label> <input
+									type="checkbox" id="go" name="postTechStack" value="Go" hidden>
+								<label for="go" class="tech-chip">Go</label> <input
+									type="checkbox" id="kotlin" name="postTechStack" value="Kotlin"
+									hidden> <label for="kotlin" class="tech-chip">Kotlin</label>
 
-        <input type="checkbox" id="javascript" name="postTechStack" value="JavaScript" hidden>
-        <label for="javascript" class="tech-chip">JavaScript</label>
+								<input type="checkbox" id="react" name="postTechStack"
+									value="React" hidden> <label for="react"
+									class="tech-chip">React</label> <input type="checkbox"
+									id="angular" name="postTechStack" value="Angular" hidden>
+								<label for="angular" class="tech-chip">Angular</label> <input
+									type="checkbox" id="springboot" name="postTechStack"
+									value="Spring Boot" hidden> <label for="springboot"
+									class="tech-chip">Spring Boot</label> <input type="checkbox"
+									id="nodejs" name="postTechStack" value="Node.js" hidden>
+								<label for="nodejs" class="tech-chip">Node.js</label> <input
+									type="checkbox" id="docker" name="postTechStack" value="Docker"
+									hidden> <label for="docker" class="tech-chip">Docker</label>
 
-        <input type="checkbox" id="typescript" name="postTechStack" value="TypeScript" hidden>
-        <label for="typescript" class="tech-chip">TypeScript</label>
+								<input type="checkbox" id="kubernetes" name="postTechStack"
+									value="Kubernetes" hidden> <label for="kubernetes"
+									class="tech-chip">Kubernetes</label> <input type="checkbox"
+									id="aws" name="postTechStack" value="AWS" hidden> <label
+									for="aws" class="tech-chip">AWS</label> <input type="checkbox"
+									id="azure" name="postTechStack" value="Azure" hidden> <label
+									for="azure" class="tech-chip">Azure</label> <input
+									type="checkbox" id="gcp" name="postTechStack"
+									value="Google Cloud" hidden> <label for="gcp"
+									class="tech-chip">Google Cloud</label>
 
-        <input type="checkbox" id="python" name="postTechStack" value="Python" hidden>
-        <label for="python" class="tech-chip">Python</label>
+							</div>
 
-        <input type="checkbox" id="go" name="postTechStack" value="Go" hidden>
-        <label for="go" class="tech-chip">Go</label>
-
-        <input type="checkbox" id="kotlin" name="postTechStack" value="Kotlin" hidden>
-        <label for="kotlin" class="tech-chip">Kotlin</label>
-
-        <input type="checkbox" id="react" name="postTechStack" value="React" hidden>
-        <label for="react" class="tech-chip">React</label>
-
-        <input type="checkbox" id="angular" name="postTechStack" value="Angular" hidden>
-        <label for="angular" class="tech-chip">Angular</label>
-
-        <input type="checkbox" id="springboot" name="postTechStack" value="Spring Boot" hidden>
-        <label for="springboot" class="tech-chip">Spring Boot</label>
-
-        <input type="checkbox" id="nodejs" name="postTechStack" value="Node.js" hidden>
-        <label for="nodejs" class="tech-chip">Node.js</label>
-
-        <input type="checkbox" id="docker" name="postTechStack" value="Docker" hidden>
-        <label for="docker" class="tech-chip">Docker</label>
-
-        <input type="checkbox" id="kubernetes" name="postTechStack" value="Kubernetes" hidden>
-        <label for="kubernetes" class="tech-chip">Kubernetes</label>
-
-        <input type="checkbox" id="aws" name="postTechStack" value="AWS" hidden>
-        <label for="aws" class="tech-chip">AWS</label>
-
-        <input type="checkbox" id="azure" name="postTechStack" value="Azure" hidden>
-        <label for="azure" class="tech-chip">Azure</label>
-
-        <input type="checkbox" id="gcp" name="postTechStack" value="Google Cloud" hidden>
-        <label for="gcp" class="tech-chip">Google Cloud</label>
-
-    </div>
-
-    <div class="form-text mt-2" style="font-size: .75rem; color: #9ca3af;">
-        Select one or more technologies
-    </div>
-</div>
+							<div class="form-text mt-2"
+								style="font-size: .75rem; color: #9ca3af;">Select one or
+								more technologies</div>
+						</div>
 
 						<div class="col-12">
 							<div class="form-actions">

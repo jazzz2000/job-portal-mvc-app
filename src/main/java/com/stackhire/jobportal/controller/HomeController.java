@@ -18,13 +18,13 @@ public class HomeController {
 	@Autowired
 	private JobService service;
 
-	@GetMapping( "/")
+	@GetMapping("/")
 	public String home() {
 		return "home";
 	}
+
 	@GetMapping("/home")
-	public String homePage()
-	{
+	public String homePage() {
 		return "home";
 	}
 
@@ -40,12 +40,12 @@ public class HomeController {
 	public String addJob() {
 		return "addjob";
 	}
-	
+
 	@GetMapping("/searchJobs")
 	public String searchJobs(@RequestParam("keyword") String keyword, Model model) {
-	    List<JobPost> jobPosts = service.searchJobs(keyword);
-	    model.addAttribute("jobPosts", jobPosts);
-	    return "viewalljobs";
+		List<JobPost> jobPosts = service.searchJobs(keyword);
+		model.addAttribute("jobPosts", jobPosts);
+		return "viewalljobs";
 	}
 
 	@PostMapping("/handleForm")
@@ -55,4 +55,22 @@ public class HomeController {
 		return "success";
 	}
 
+	@GetMapping("/editJob")
+	public String editJob(@RequestParam("id") int id, Model model) {
+		JobPost jobPost = service.getJobById(id);
+		model.addAttribute("jobPost", jobPost);
+		return "editjob";
+	}
+
+	@PostMapping("/updateJob")
+	public String updateJob(@ModelAttribute JobPost jobPost) {
+		service.updateJob(jobPost);
+		return "redirect:/viewalljobs";
+	}
+
+	@GetMapping("/deleteJob")
+	public String deleteJob(@RequestParam("id") int id) {
+		service.deleteJob(id);
+		return "redirect:/viewalljobs";
+	}
 }

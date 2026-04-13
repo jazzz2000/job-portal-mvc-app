@@ -50,6 +50,12 @@ public class HomeController {
 
 	@PostMapping("/handleForm")
 	public String handleForm(@ModelAttribute JobPost jobPost, Model model) {
+		if (service.existsById(jobPost.getPostId())) {
+			model.addAttribute("errorMessage",
+					"⚠️ Job ID " + jobPost.getPostId() + " already exists. Please use a different ID.");
+			model.addAttribute("jobPost", jobPost);
+			return "addjob";
+		}
 		service.addJob(jobPost);
 		model.addAttribute("jobPost", jobPost);
 		return "success";
@@ -73,4 +79,5 @@ public class HomeController {
 		service.deleteJob(id);
 		return "redirect:/viewalljobs";
 	}
+
 }

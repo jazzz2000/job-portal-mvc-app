@@ -13,6 +13,8 @@
 	__integrity__="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 	__crossorigin__="anonymous">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon"
+	href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
 

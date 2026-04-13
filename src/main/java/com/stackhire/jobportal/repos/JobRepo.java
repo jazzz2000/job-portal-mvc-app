@@ -37,19 +37,27 @@ public class JobRepo {
 
 		String searchKeyword = "%" + keyword + "%";
 
-		return jdbcTemplate.query(sql, new Object[] { searchKeyword, searchKeyword, searchKeyword },
+		return jdbcTemplate.query(sql,
 				(rs, rowNum) -> new JobPost(rs.getInt("post_id"), rs.getString("post_profile"),
 						rs.getString("post_desc"), rs.getInt("req_experience"),
-						Arrays.asList(rs.getString("post_tech_stack").split(","))));
+						Arrays.asList(rs.getString("post_tech_stack").split(","))),
+				searchKeyword, searchKeyword, searchKeyword);
 	}
 
 	public JobPost getJobById(int id) {
 		String sql = "SELECT * FROM job_post WHERE post_id = ?";
 
-		return jdbcTemplate.queryForObject(sql, new Object[] { id },
+		return jdbcTemplate.queryForObject(sql,
 				(rs, rowNum) -> new JobPost(rs.getInt("post_id"), rs.getString("post_profile"),
 						rs.getString("post_desc"), rs.getInt("req_experience"),
-						Arrays.asList(rs.getString("post_tech_stack").split(","))));
+						Arrays.asList(rs.getString("post_tech_stack").split(","))),
+				id);
+	}
+
+	public boolean existsById(int id) {
+		String sql = "SELECT COUNT(*) FROM job_post WHERE post_id = ?";
+		Integer count = jdbcTemplate.queryForObject(sql, Integer.class, id);
+		return count != null && count > 0;
 	}
 
 	public void updateJob(JobPost job) {

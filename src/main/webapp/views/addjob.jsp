@@ -1,6 +1,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@ page isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +14,8 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 	rel="stylesheet" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon"
+	href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
 
@@ -51,6 +55,11 @@
 			<div class="card-body">
 				<span class="section-title">Job Details</span>
 
+				<c:if test="${not empty errorMessage}">
+					<div
+						class="alert alert-danger d-flex align-items-center gap-2 mb-3"
+						role="alert">${errorMessage}</div>
+				</c:if>
 				<form:form action="handleForm" method="post"
 					modelAttribute="jobPost">
 					<div class="row g-3">

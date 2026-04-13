@@ -37,4 +37,7 @@ public class JobService {
 		repo.deleteJob(id);
 	}
 
+	public boolean existsById(int id) {
+		return repo.existsById(id);
+	}
 }
